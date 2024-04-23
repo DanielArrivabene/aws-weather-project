@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+main {
+  padding-top: 10rem !important;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.search_container,
+.result_container {
+  max-width: 400px;
+}
+
+.search_container input {
+  width: 100%;
+}
+
+.search_container button {
+  aspect-ratio: 1 /1;
+}
+
+.search_container button svg {
+  font-size: 1.5rem;
+}
+
+.search_container button svg * {
+  color: #fff;
+}
