@@ -36,7 +36,6 @@ function Forecast() {
           update_result.wind = data.wind.speed
           update_result.icon = data.weather[0].icon
           setResult(update_result);
-          console.log(result);
         });
       setSuccess(true);
     } catch (err) {
