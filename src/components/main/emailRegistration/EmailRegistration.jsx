@@ -39,7 +39,6 @@ function EmailRegistration() {
           setText('Tente novamente.');
           throw new Error('Tente novamente.');
         }
-        console.log('Email enviado com sucesso:', data);
         setText('Email cadastrado com sucesso!');
       })
       .catch((error) => {

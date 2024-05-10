@@ -26,7 +26,6 @@ function Forecast() {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
           let update_result = {}
           update_result.city = city
           update_result.temp = data.main.temp
