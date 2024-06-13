@@ -24,12 +24,7 @@ function EmailRegistration() {
         body: JSON.stringify(myData)
       }
     )
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Erro ao enviar email');
-        }
-        return response.json();
-      })
+      bom dia
       .then((data) => {
         if (data.statusCode == 400) {
           setText('Email já cadastrado anteriormente.');

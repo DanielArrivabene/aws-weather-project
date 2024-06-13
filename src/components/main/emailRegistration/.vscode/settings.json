@@ -1,0 +1,21 @@
+{
+  "accessibility.signalOptions": {
+    
+    "volume": 70,
+    "debouncePositionChanges": false,
+    "experimental.delays": {
+      "general": {
+        "announcement": 3000,
+        "sound": 400
+      },
+      "warningAtPosition": {
+        "announcement": 3000,
+        "sound": 1000
+      },
+      "errorAtPosition": {
+        "announcement": 3000,
+        "sound": 1000
+      }
+    }
+  }
+}
