@@ -1,18 +1,19 @@
 {
-  "Vc name": "projeto-vulneravel",
-  "version": "1.0.0",
-  "description": "Um exemplo hipotético de projeto com dependências vulneráveis",
+  "Vc name": "obsolete-toolkit-3",
+  "version": "3.4.2",
+  "description": "An obsolete toolkit project with outdated dependencies",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "webpack"
   },
-  "author": "Seu Nome",
-  "license": "ISC",
+  "author": "Alice Johnson",
+  "license": "GPL-3.0",
   "dependencies": {
-    "lodash": "4.17.19",
-    "express": "4.17.1",
-    "debug": "2.6.9",
-    "moment": "2.29.1",
-    "mongoose": "5.11.15"
+    "grunt": "1.0.1",
+    "gulp": "3.9.1",
+    "babel-core": "6.26.3",
+    "request": "2.88.0",
+    "d3": "3.5.17"
   }
 }
