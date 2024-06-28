@@ -10,10 +10,10 @@
   "author": "Alice Johnson",
   "license": "GPL-3.0",
   "dependencies": {
-    "grunt": "1.0.1",
-    "gulp": "3.9.1",
-    "babel-core": "6.26.3",
-    "request": "2.88.0",
-    "d3": "3.5.17"
+    "grunt": "0.0.1",
+    "gulp": "1.0.2",
+    "babel-core": "0.26.3",
+    "request": "1.8.0",
+    "d3": "5.0.0"
   }
 }

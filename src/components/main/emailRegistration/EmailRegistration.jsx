@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { TbSend } from 'react-icons/tb';
 
 function EmailRegistration() {
-  const [email, setEmail] = useState();
-  const [city, setCity] = useState();
+  const [email, setEmail] = useState('');
+  const [city, setCity] = useState('');
   const [text, setText] = useState(
     'Inscreva-se para receber a previsão do tempo diariamente por email'
   );
@@ -20,7 +20,7 @@ function EmailRegistration() {
     const myData = { email, city };
 
     fetch(
-      'https://t6k90g1hi7.execute-api.us-east-1.amazonaws.com/dev/registeremail',
+      'http://t6k90g1hi7.execute-api.us-east-1.amazonaws.com/dev/registeremail',
       {
         method: 'POST',
         headers: {
@@ -42,9 +42,9 @@ function EmailRegistration() {
       })
       .catch((error) => {
         console.error('Erro:', error);
+        setText('Ocorreu um erro ao processar a solicitação.');
       });
   }
-
   return (
     <section className="container d-flex flex-column align-items-center">
       <article className="w-100 p-4 bg-primary rounded-2 search_container">

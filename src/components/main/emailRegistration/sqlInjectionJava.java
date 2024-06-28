@@ -2,7 +2,6 @@ import java.sql.*;
 
 public class ExemploSQLInjection {
 
-    // Método para buscar usuário por nome (vulnerável a SQL Injection)
     public void buscarUsuario(String nome) {
         String query = "SELECT * FROM usuarios WHERE nome = ?";
         try {
@@ -28,7 +27,6 @@ public class ExemploSQLInjection {
     public static void main(String[] args) {
         ExemploSQLInjection exemplo = new ExemploSQLInjection();
         
-        // Exemplo de uso com entrada do usuário (pode ser explorado com SQL Injection)
         exemplo.buscarUsuario("'; DROP TABLE usuarios; --");
     }
 }
