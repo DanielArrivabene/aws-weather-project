@@ -1,0 +1,18 @@
+{
+  "Vc name": "projeto-vulneravel",
+  "version": "1.0.0",
+  "description": "Um exemplo hipotético de projeto com dependências vulneráveis",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Seu Nome",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.17.19",
+    "express": "4.17.1",
+    "debug": "2.6.9",
+    "moment": "2.29.1",
+    "mongoose": "5.11.15"
+  }
+}

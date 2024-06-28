@@ -11,7 +11,13 @@ function EmailRegistration() {
   function handleSend(email, city, e) {
     e.preventDefault();
 
-    const myData = [email, city];
+    // Validate input data
+    if (!email || !city) {
+      console.error('Invalid input data');
+      return;
+    }
+
+    const myData = { email, city };
 
     fetch(
       'https://t6k90g1hi7.execute-api.us-east-1.amazonaws.com/dev/registeremail',
@@ -19,18 +25,16 @@ function EmailRegistration() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
-          // Adicione outras cabeçalhos de autenticação, se necessário
         },
         body: JSON.stringify(myData)
       }
     )
-      bom dia
-      .then((data) => {
-        if (data.statusCode == 400) {
+      .then((response) => {
+        if (response.status === 400) {
           setText('Email já cadastrado anteriormente.');
           throw new Error('Email já cadastrado anteriormente.');
         }
-        if (data.statusCode != 200) {
+        if (response.status !== 200) {
           setText('Tente novamente.');
           throw new Error('Tente novamente.');
         }
